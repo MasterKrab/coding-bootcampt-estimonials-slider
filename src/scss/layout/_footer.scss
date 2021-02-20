@@ -1,0 +1,17 @@
+.footer{
+   text-align: center;
+   margin-top: auto;
+   padding: 1rem;
+   &__text{
+      margin-top: 5rem;
+   }
+   &__link{
+      text-decoration: none;
+      font-weight: 700;
+      @media screen and (min-width: 768px){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }  
+}

@@ -11,7 +11,8 @@ html{
 body{
    min-height: 100vh;
    box-sizing: inherit;
-   display: flex;
    color: variables.$dark-blue;
+   display: flex;
+   flex-direction: column;
 }
 

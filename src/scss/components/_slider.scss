@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as variables;
+
+.slider{
+   position: relative;
+   width: 80%;
+   max-width: 450px;
+   margin-top: 1rem;
+}
+
+.slider__control{
+   height: 45px;
+   width: 100px;
+   background-color: variables.$white;
+   border-radius: variables.$border-radius;
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   @media screen and (min-width: 768px){
+      left: 150px;
+   }
+}
+
+.slider__images-container{
+   display: flex;
+   overflow-x: hidden;
+}
+
+.slider__image{
+   box-shadow: 0 10px 10px 5px rgba(0,0,0, 0.2);
+}
+
+.slider-button{
+   display: block;
+   width: 50%;
+   height: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+
+   &:active{
+      border-radius: variables.$border-radius;
+      background-color: rgb(246, 241, 241);
+   }
+
+   &:first-child{
+      background-image: url(../assets/img/icon-prev.svg);
+   }
+   &:last-child{
+      background-image: url(../assets/img/icon-next.svg);
+   }
+}

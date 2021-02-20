@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as variables;
+
+html{
+   background-image: url(../assets/img/pattern-curve.svg);
+   background-repeat: no-repeat;
+   background-position: bottom left;
+   box-sizing: border-box;
+   font-family: variables.$fonts;
+}
+
+body{
+   min-height: 100vh;
+   box-sizing: inherit;
+   display: flex;
+   color: variables.$dark-blue;
+}
+

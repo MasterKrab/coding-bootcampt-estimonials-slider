@@ -1,6 +1,6 @@
 const tesminonialElement = document.getElementById("testimonial-text")
 const sliderControl = document.getElementById("slider")
-const sliderImgContainer = document.getElementById("slider-img")
+const sliderImg = document.getElementById("slider-img")
 
 const changeSlider = type =>{
    tesminonialElement.innerHTML = `
@@ -9,7 +9,8 @@ const changeSlider = type =>{
           <cite class="testimonial__name">${persons[type].name}</cite> ${persons[type].profession}
         </p>
    `
-   sliderImgContainer.innerHTML = `<img class="slider__image" src="assets/img/${persons[type].img}" alt="${persons[type].name} profile photo">`
+   sliderImg.src= `../assets/img/${persons[type].img}`
+   sliderImg.alt= `${persons[type].name} profile photo`
 }
 
 sliderControl.addEventListener("click", e =>{
